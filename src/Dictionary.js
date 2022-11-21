@@ -12,10 +12,6 @@ export default function Dictionary(props) {
     setResults(response.data[0]);
   }
 
-  function search(event) {
-    event.preventDefault();
-  }
-
   function search() {
     // documentation: https://dictionaryapi.dev/
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyWord}`;
