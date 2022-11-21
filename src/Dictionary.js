@@ -24,7 +24,7 @@ export default function Dictionary(props) {
 
   function handleSubmit(event) {
     event.preventDefault();
-    search();
+    searching();
   }
 
   function handleTheKeyWord(event) {
@@ -33,7 +33,7 @@ export default function Dictionary(props) {
 
   function load() {
     setLoaded(true);
-    searching();
+    search();
   }
   if (loaded) {
     return (
