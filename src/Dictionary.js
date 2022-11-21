@@ -16,7 +16,7 @@ export default function Dictionary(props) {
     event.preventDefault();
   }
 
-  function searching() {
+  function search() {
     // documentation: https://dictionaryapi.dev/
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyWord}`;
     axios.get(apiUrl).then(handleResponse);
@@ -24,7 +24,7 @@ export default function Dictionary(props) {
 
   function handleSubmit(event) {
     event.preventDefault();
-    searching();
+    search();
   }
 
   function handleTheKeyWord(event) {
